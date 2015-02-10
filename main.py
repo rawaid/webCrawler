@@ -21,20 +21,24 @@ for song in songs:
     songList.append(song.rstrip())
 print(songList)
 spider = Spider.Spider()
+print("Book Sites Found:\n")
 for item in bookList:
     for url in search(item + " book", stop=10):
         if type(url) is str:
-            print(spider.parser(url))
-
+            #print(spider.parser(url))
+            print("Found: ", url)
+print("Movie Sites Found:\n")
 for item in movieList:
     for url in search(item + " movie", stop=10):
         if type(url) is str:
-            print(spider.parser(url))
-
+            #print(spider.parser(url))
+            print("Found: ", url)
+print("Musician Sites Found:\n")
 for item in songList:
     for url in search(item + " song", stop=10):
         if type(url) is str:
-            print(spider.parser(url))
+            #print(spider.parser(url))
+            print("Found: ", url)
 
 books.close()
 movies.close()

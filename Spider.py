@@ -54,7 +54,7 @@ class Spider:
         [s.extract() for s in soup(['iframe','script','link'])]
 
         # Remove all comments
-        comments = soup.findAll(text=lambda text:isinstance(text, Comment))
+        comments = soup.findAll(text=lambda text: isinstance(text, Comment))
         [comment.extract() for comment in comments]
 
         # Convert downloaded page into readable / elegant format
