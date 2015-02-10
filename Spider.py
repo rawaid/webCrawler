@@ -85,9 +85,9 @@ class Spider:
         #File Creator
         dbWrapper = WebDB.Wrapper()
 
-        dbWrapper.createCleanFile()
-        dbWrapper.createRawFile()
-        dbWrapper.createHeaderFile()
+        #dbWrapper.createCleanFile()
+        #dbWrapper.createRawFile()
+        #dbWrapper.createHeaderFile()
 
         return tokenizedHTML
 

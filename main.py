@@ -2,7 +2,6 @@ __author__ = 'rawaid'
 import Spider
 from google import search
 
-
 books = open("cache/items/book.txt", "r")
 bookList = []
 for book in books:
@@ -27,21 +26,21 @@ for item in bookList:
         if type(url) is str:
             #print(spider.parser(url))
             print("Found: ", url)
-            print(Spider.parser(url, "book"))
+            print(spider.parser(url, "book"))
 print("Movie Sites Found:\n")
 for item in movieList:
     for url in search(item + " movie", stop=10):
         if type(url) is str:
             #print(spider.parser(url))
             print("Found: ", url)
-            print(Spider.parser(url, "movie"))
+            print(spider.parser(url, "movie"))
 print("Musician Sites Found:\n")
 for item in songList:
     for url in search(item + " song", stop=10):
         if type(url) is str:
             #print(spider.parser(url))
             print("Found: ", url)
-            print(Spider.parser(url, "music"))
+            print(spider.parser(url, "music"))
 
 books.close()
 movies.close()
