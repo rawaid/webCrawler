@@ -86,8 +86,9 @@ class Spider:
         dbWrapper = WebDB.Wrapper()
 
         dbWrapper.createCleanFile(tokenizedHTML, id)
-        dbWrapper.createRawFile(soup, id)
+        dbWrapper.createRawFile(str(page), id)
         #dbWrapper.createHeaderFile()
+
 
         return id
 

@@ -214,8 +214,9 @@ class WebDB(object):
 class Wrapper(object):
 
     def createCleanFile(self, dict, id):
+        print("CREATE CLEAN")
         filename = self.getFileNameFromID(id)
-        fo = open(("data/clean/" + filename), "w+")
+        fo = open(("cache/clean/" + filename), "w+")
 
         if (type(dict) == type(defaultdict())):
             for key, value in dict.items():
@@ -223,15 +224,16 @@ class Wrapper(object):
         fo.close()
 
     def createRawFile(self, input, id):
+        print("CREATE RAW")
         filename = self.getFileNameFromID(id)
-        fo = open(("data/raw/" + filename), "w+")
+        fo = open(("cache/raw/" + filename), "w+")
 
         fo.write(input)
         fo.close()
 
     def createHeaderFile(self, input, id):
         filename = self.getFileNameFromID(id)
-        fo = open(("data/header/" + filename), "w+")
+        fo = open(("cache/header/" + filename), "w+")
 
         fo.write(input)
         fo.close()
