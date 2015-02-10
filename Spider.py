@@ -39,8 +39,9 @@ class Spider:
         """
         self.tokens = []
         self.title = ""
+        self.database = WebDB.WebDB("cache/database.db")
 
-    def parser(self, urlIn):
+    def parser(self, urlIn, docTypeIn):
         """
         This function should strip out HTML tags, remove punctuation,
         and break up the string of character into tokens. Also,
@@ -49,7 +50,13 @@ class Spider:
         :param urlIn: Raw HTML Page
         :return: age Title, List or Tokens
         """
+        id = self.database.lookupCachedURL_byURL(urlIn)
+        if id is not None:
+            return id
 
+        #Grab title of site
+
+        id = self.database.insertCachedURL(urlIn, docTypeIn)#title too
 
         page = urllib.request.urlopen(urlIn)
         page = page.read()
@@ -74,6 +81,13 @@ class Spider:
         for x in tokenizedHTML:
            if x in punct:
                tokenizedHTML.remove(x)
+
+        #File Creator
+        dbWrapper = WebDB.Wrapper()
+
+        dbWrapper.createCleanFile()
+        dbWrapper.createRawFile()
+        dbWrapper.createHeaderFile()
 
         return tokenizedHTML
 
