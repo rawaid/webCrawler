@@ -39,5 +39,4 @@ class headerGetter():
             return str(self.header)
 
 
-getHeader(url)
 
