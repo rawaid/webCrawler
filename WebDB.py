@@ -7,6 +7,8 @@ http://jimi.ithaca.edu/CourseWiki/index.php/CS490_S15_Schedule
 
 import sqlite3
 import re
+from collections import defaultdict
+
 
 class WebDB(object):
 
@@ -61,6 +63,7 @@ class WebDB(object):
         """
         Execute an arbitrary SQL command on the underlying database.
         """
+        print(sql)
         res = self.cur.execute(sql)
         self.cxn.commit()
 
@@ -208,12 +211,34 @@ class WebDB(object):
         res = self.execute(sql)
         return self.cur.lastrowid
 
-if __name__=='__main__':
-    db = WebDB('test.db')
-    urlID  = db.insertCachedURL("http://jimi.ithaca.edu/", "text/html", "JimiLab :: Ithaca College")
-    itemID = db.insertItem("JimiLab", "Research Lab")
-    u2iID  = db.insertURLToItem(urlID, itemID)
+class Wrapper(object):
 
-    (url, docType, title) =  db.lookupCachedURL_byID(urlID);
+    def createCleanFile(self, dict, id):
+        filename = self.getFileNameFromID(id)
+        fo = open(("data/clean/" + filename), "w+")
 
-    print("Page Info: ",url,"\t" , docType,"\t", title)
+        if (type(dict) == type(defaultdict())):
+            for key, value in dict.items():
+                fo.write(str(key) + "\n")
+        fo.close()
+
+    def createRawFile(self, input, id):
+        filename = self.getFileNameFromID(id)
+        fo = open(("data/raw/" + filename), "w+")
+
+        fo.write(input)
+        fo.close()
+
+    def createHeaderFile(self, input, id):
+        filename = self.getFileNameFromID(id)
+        fo = open(("data/header/" + filename), "w+")
+
+        fo.write(input)
+        fo.close()
+
+    def getFileNameFromID(self, id):
+        filename = "" + str(id)
+        # while (len(filename) <= 6):
+        #     filename = "0" + filename
+        filename = "{0:0>6".format(id)
+        return filename + ".txt"

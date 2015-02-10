@@ -14,13 +14,19 @@ Dependencies: you may need to download the nltk importer:
 Code by Chris Kondrat (Modified by Doug Turnbull)
 """
 
-__author__ = 'Chris Kondrat'
+__author__ = 'Nick & Ali'
 import urllib.request
 import string
 
 from bs4 import BeautifulSoup, Comment
 from nltk import word_tokenize
 from nltk.stem import *
+import nltk
+import nltk.data
+from collections import defaultdict
+import WebDB
+import time
+import random
 
 class Spider:
     """
