@@ -85,11 +85,11 @@ class Spider:
         #File Creator
         dbWrapper = WebDB.Wrapper()
 
-        #dbWrapper.createCleanFile()
-        #dbWrapper.createRawFile()
+        dbWrapper.createCleanFile(tokenizedHTML, id)
+        dbWrapper.createRawFile(soup, id)
         #dbWrapper.createHeaderFile()
 
-        return tokenizedHTML
+        return id
 
     def lowecase(self, tokensIn):
         """

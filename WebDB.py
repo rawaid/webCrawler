@@ -240,5 +240,5 @@ class Wrapper(object):
         filename = "" + str(id)
         # while (len(filename) <= 6):
         #     filename = "0" + filename
-        filename = "{0:0>6".format(id)
+        filename = "{0:0>6}".format(id)
         return filename + ".txt"

@@ -25,21 +25,18 @@ for item in bookList:
     for url in search(item + " book", stop=10):
         if type(url) is str:
             #print(spider.parser(url))
-            print("Found: ", url)
             print(spider.parser(url, "book"))
 print("Movie Sites Found:\n")
 for item in movieList:
     for url in search(item + " movie", stop=10):
         if type(url) is str:
             #print(spider.parser(url))
-            print("Found: ", url)
             print(spider.parser(url, "movie"))
 print("Musician Sites Found:\n")
 for item in songList:
     for url in search(item + " song", stop=10):
         if type(url) is str:
             #print(spider.parser(url))
-            print("Found: ", url)
             print(spider.parser(url, "music"))
 
 books.close()
