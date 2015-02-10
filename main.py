@@ -23,18 +23,18 @@ print(songList)
 spider = Spider.Spider()
 for item in bookList:
     for url in search(item + " book", stop=10):
-        if(type(url) is str):
-            print(spider.fetch(url, "book"))
+        if type(url) is str:
+            print(spider.parser(url))
 
 for item in movieList:
     for url in search(item + " movie", stop=10):
-         if(type(url) is str):
-            print(spider.fetch(url, "movie"))
+        if type(url) is str:
+            print(spider.parser(url))
 
 for item in songList:
     for url in search(item + " song", stop=10):
-         if(type(url) is str):
-            print(spider.fetch(url, "song"))
+        if type(url) is str:
+            print(spider.parser(url))
 
 books.close()
 movies.close()
