@@ -82,10 +82,12 @@ class Spider:
            if x in punct:
                tokenizedHTML.remove(x)
 
+
+        siteTokens = self.convertListToDictionary(tokenizedHTML)
         #File Creator
         dbWrapper = WebDB.Wrapper()
 
-        dbWrapper.createCleanFile(tokenizedHTML, id)
+        dbWrapper.createCleanFile(siteTokens, id)
         dbWrapper.createRawFile(str(page), id)
         #dbWrapper.createHeaderFile()
 
@@ -128,6 +130,12 @@ class Spider:
         unique = []
         unique = set(tokensIn)
         return unique
+
+    def convertListToDictionary(self, list):
+        dictionary = defaultdict(int)
+        for token in list:
+            dictionary[token] += 1
+        return dictionary
 
 
 if __name__=='__main__':
