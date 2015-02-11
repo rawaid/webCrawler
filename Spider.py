@@ -25,6 +25,7 @@ import nltk
 import nltk.data
 from collections import defaultdict
 import WebDB
+import sqlite3
 import time
 import random
 
@@ -84,6 +85,7 @@ class Spider:
 
 
         siteTokens = self.convertListToDictionary(tokenizedHTML)
+        conn = sqlite3.connect(r"cache/database.db")
         #File Creator
         dbWrapper = WebDB.Wrapper()
 

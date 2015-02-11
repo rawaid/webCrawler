@@ -39,4 +39,3 @@ class headerGetter():
             return str(self.header)
 
 
-
