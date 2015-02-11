@@ -220,7 +220,7 @@ class Wrapper(object):
             os.makedirs(filename)
         print("CREATE CLEAN")
         filename = self.getFileNameFromID(id)
-        fo = open(("cache/clean/" + filename), "w+")
+        fo = open(("cache/clean/" + filename), "w+", encoding='utf-8')
 
         if (type(dict) == type(defaultdict())):
             for key, value in dict.items():
@@ -233,7 +233,7 @@ class Wrapper(object):
             os.makedirs(filename)
         print("CREATE RAW")
         filename = self.getFileNameFromID(id)
-        fo = open(("cache/raw/" + filename), "w+")
+        fo = open(("cache/raw/" + filename), "w+", encoding='utf-8')
 
         fo.write(input)
         fo.close()
@@ -243,7 +243,7 @@ class Wrapper(object):
         if not os.path.exists(filename):
             os.makedirs(filename)
         filename = self.getFileNameFromID(id)
-        fo = open(("cache/header/" + filename), "w+")
+        fo = open(("cache/header/" + filename), "w+", encoding='utf-8')
 
         fo.write(input)
         fo.close()

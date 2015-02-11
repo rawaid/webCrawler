@@ -28,6 +28,7 @@ import WebDB
 import sqlite3
 import time
 import random
+import headerGetter
 
 class Spider:
     """
@@ -55,14 +56,17 @@ class Spider:
         if id is not None:
             return id
 
-        #Grab title of site
+        headerGrabber = headerGetter.headerGetter()
+        siteHeader = headerGrabber.returnHeader(urlIn)
 
-        id = self.database.insertCachedURL(urlIn, docTypeIn)#title too
+
 
         page = urllib.request.urlopen(urlIn)
         page = page.read()
         soup = BeautifulSoup(page)
-        self.title = soup.title.string
+        title = soup.title.string
+
+        id = self.database.insertCachedURL(urlIn, docTypeIn, title)#title too
 
         # Remove iframes, scripts and links tags
         [s.extract() for s in soup(['iframe','script','link'])]
@@ -85,13 +89,14 @@ class Spider:
 
 
         siteTokens = self.convertListToDictionary(tokenizedHTML)
+
         conn = sqlite3.connect(r"cache/database.db")
         #File Creator
         dbWrapper = WebDB.Wrapper()
 
         dbWrapper.createCleanFile(siteTokens, id)
         dbWrapper.createRawFile(str(page), id)
-        #dbWrapper.createHeaderFile()
+        dbWrapper.createHeaderFile(siteHeader, id)
 
 
         return id

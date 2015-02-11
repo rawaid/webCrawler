@@ -1,6 +1,7 @@
 __author__ = 'rawaid'
 import urllib.request
 import time
+import socket
 
 class headerGetter():
 
@@ -35,7 +36,10 @@ class headerGetter():
                 time.sleep(2)
                 return self.getHeader(url)
 
-        def returnHeader(self):
+        def returnHeader(self, url):
+            self.getHeader(url)
             return str(self.header)
 
 
+#headerGrabber = headerGetter()
+#print(headerGrabber.returnHeader("https://breakingcode.wordpress.com/2010/06/29/google-search-python/"))
