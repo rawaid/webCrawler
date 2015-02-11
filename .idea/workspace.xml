@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3ac6697-6c88-4470-b0db-5b0d2e81dff7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spider.py" afterPath="$PROJECT_DIR$/Spider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebDB.py" afterPath="$PROJECT_DIR$/WebDB.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lab2.iws" />
@@ -17,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/lab2$main.coverage" NAME="main Coverage Results" MODIFIED="1423612758364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab2$main.coverage" NAME="main Coverage Results" MODIFIED="1423613090401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Spider.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78368795" vertical-offset="1071" max-vertical-offset="3009">
-              <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3009">
+              <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
               <folding>
                 <element signature="e#575#596#0" expanded="true" />
               </folding>
@@ -77,24 +77,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebDB.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebDB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1948" max-vertical-offset="4267">
-              <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.39716312" vertical-offset="3890" max-vertical-offset="4454">
+              <caret line="242" column="40" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
               <folding>
                 <element signature="e#232#246#0" expanded="true" />
-                <marker date="1423611996688" expanded="true" signature="648:917" placeholder="CREATE TABLE..IF..." />
-                <marker date="1423611996688" expanded="true" signature="948:1170" placeholder="CREATE TABLE..IF..." />
-                <marker date="1423611996688" expanded="true" signature="1201:1415" placeholder="CREATE TABLE..IF..." />
-                <marker date="1423611996688" expanded="true" signature="2270:2309" placeholder="SELECT id FR..CachedURL..." />
-                <marker date="1423611996688" expanded="true" signature="2852:2903" placeholder="SELECT url, ..CachedURL..." />
-                <marker date="1423611996688" expanded="true" signature="3319:3368" placeholder="SELECT id FR..Item..." />
-                <marker date="1423611996688" expanded="true" signature="3796:3847" placeholder="SELECT id FR..UrlToItem..." />
-                <marker date="1423611996688" expanded="true" signature="4470:4501" placeholder="DELETE FROM ..." />
-                <marker date="1423611996688" expanded="true" signature="5005:5090" placeholder="INSERT INTO ..." />
-                <marker date="1423611996688" expanded="true" signature="5597:5667" placeholder="INSERT INTO ..." />
-                <marker date="1423611996688" expanded="true" signature="6133:6207" placeholder="INSERT INTO ..." />
+                <marker date="1423613578885" expanded="true" signature="658:927" placeholder="CREATE TABLE..IF..." />
+                <marker date="1423613578885" expanded="true" signature="958:1180" placeholder="CREATE TABLE..IF..." />
+                <marker date="1423613578885" expanded="true" signature="1211:1425" placeholder="CREATE TABLE..IF..." />
+                <marker date="1423613578885" expanded="true" signature="2280:2319" placeholder="SELECT id FR..CachedURL..." />
+                <marker date="1423613578885" expanded="true" signature="2862:2913" placeholder="SELECT url, ..CachedURL..." />
+                <marker date="1423613578885" expanded="true" signature="3329:3378" placeholder="SELECT id FR..Item..." />
+                <marker date="1423613578885" expanded="true" signature="3806:3857" placeholder="SELECT id FR..UrlToItem..." />
+                <marker date="1423613578885" expanded="true" signature="4480:4511" placeholder="DELETE FROM ..." />
+                <marker date="1423613578885" expanded="true" signature="5015:5100" placeholder="INSERT INTO ..." />
+                <marker date="1423613578885" expanded="true" signature="5607:5677" placeholder="INSERT INTO ..." />
+                <marker date="1423613578885" expanded="true" signature="6143:6217" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -111,8 +111,8 @@
       <list>
         <option value="$PROJECT_DIR$/google.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/WebDB.py" />
         <option value="$PROJECT_DIR$/Spider.py" />
+        <option value="$PROJECT_DIR$/WebDB.py" />
       </list>
     </option>
   </component>
@@ -173,7 +173,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Dropbox/cs492/lab1" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -460,7 +460,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423612389539</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="clean not so clean...">
+      <created>1423612822779</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1423612822779</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -509,7 +515,8 @@
     <MESSAGE value="general cleanup" />
     <MESSAGE value="webDb implemented in main and spider" />
     <MESSAGE value="fixed raw now clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed raw now clean" />
+    <MESSAGE value="clean not so clean..." />
+    <option name="LAST_COMMIT_MESSAGE" value="clean not so clean..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -567,17 +574,17 @@
           <caret line="216" column="14" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
           <folding>
             <element signature="e#232#246#0" expanded="true" />
-            <marker date="1423611996688" expanded="true" signature="648:917" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="948:1170" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="1201:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="2270:2309" placeholder="SELECT id FR..CachedURL..." />
-            <marker date="1423611996688" expanded="true" signature="2852:2903" placeholder="SELECT url, ..CachedURL..." />
-            <marker date="1423611996688" expanded="true" signature="3319:3368" placeholder="SELECT id FR..Item..." />
-            <marker date="1423611996688" expanded="true" signature="3796:3847" placeholder="SELECT id FR..UrlToItem..." />
-            <marker date="1423611996688" expanded="true" signature="4470:4501" placeholder="DELETE FROM ..." />
-            <marker date="1423611996688" expanded="true" signature="5005:5090" placeholder="INSERT INTO ..." />
-            <marker date="1423611996688" expanded="true" signature="5597:5667" placeholder="INSERT INTO ..." />
-            <marker date="1423611996688" expanded="true" signature="6133:6207" placeholder="INSERT INTO ..." />
+            <marker date="1423613578885" expanded="true" signature="658:927" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="958:1180" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="1211:1425" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="2280:2319" placeholder="SELECT id FR..CachedURL..." />
+            <marker date="1423613578885" expanded="true" signature="2862:2913" placeholder="SELECT url, ..CachedURL..." />
+            <marker date="1423613578885" expanded="true" signature="3329:3378" placeholder="SELECT id FR..Item..." />
+            <marker date="1423613578885" expanded="true" signature="3806:3857" placeholder="SELECT id FR..UrlToItem..." />
+            <marker date="1423613578885" expanded="true" signature="4480:4511" placeholder="DELETE FROM ..." />
+            <marker date="1423613578885" expanded="true" signature="5015:5100" placeholder="INSERT INTO ..." />
+            <marker date="1423613578885" expanded="true" signature="5607:5677" placeholder="INSERT INTO ..." />
+            <marker date="1423613578885" expanded="true" signature="6143:6217" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -618,17 +625,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#232#246#0" expanded="true" />
-            <marker date="1423611996688" expanded="true" signature="648:917" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="948:1170" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="1201:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="2270:2309" placeholder="SELECT id FR..CachedURL..." />
-            <marker date="1423611996688" expanded="true" signature="2852:2903" placeholder="SELECT url, ..CachedURL..." />
-            <marker date="1423611996688" expanded="true" signature="3319:3368" placeholder="SELECT id FR..Item..." />
-            <marker date="1423611996688" expanded="true" signature="3796:3847" placeholder="SELECT id FR..UrlToItem..." />
-            <marker date="1423611996688" expanded="true" signature="4470:4501" placeholder="DELETE FROM ..." />
-            <marker date="1423611996688" expanded="true" signature="5005:5090" placeholder="INSERT INTO ..." />
-            <marker date="1423611996688" expanded="true" signature="5597:5667" placeholder="INSERT INTO ..." />
-            <marker date="1423611996688" expanded="true" signature="6133:6207" placeholder="INSERT INTO ..." />
+            <marker date="1423613578885" expanded="true" signature="658:927" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="958:1180" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="1211:1425" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="2280:2319" placeholder="SELECT id FR..CachedURL..." />
+            <marker date="1423613578885" expanded="true" signature="2862:2913" placeholder="SELECT url, ..CachedURL..." />
+            <marker date="1423613578885" expanded="true" signature="3329:3378" placeholder="SELECT id FR..Item..." />
+            <marker date="1423613578885" expanded="true" signature="3806:3857" placeholder="SELECT id FR..UrlToItem..." />
+            <marker date="1423613578885" expanded="true" signature="4480:4511" placeholder="DELETE FROM ..." />
+            <marker date="1423613578885" expanded="true" signature="5015:5100" placeholder="INSERT INTO ..." />
+            <marker date="1423613578885" expanded="true" signature="5607:5677" placeholder="INSERT INTO ..." />
+            <marker date="1423613578885" expanded="true" signature="6143:6217" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -638,27 +645,6 @@
         <state vertical-scroll-proportion="0.55684006" vertical-offset="0" max-vertical-offset="519">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4267">
-          <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-          <folding>
-            <element signature="e#232#246#0" expanded="true" />
-            <marker date="1423611996688" expanded="true" signature="648:917" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="948:1170" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="1201:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1423611996688" expanded="true" signature="2270:2309" placeholder="SELECT id FR..CachedURL..." />
-            <marker date="1423611996688" expanded="true" signature="2852:2903" placeholder="SELECT url, ..CachedURL..." />
-            <marker date="1423611996688" expanded="true" signature="3319:3368" placeholder="SELECT id FR..Item..." />
-            <marker date="1423611996688" expanded="true" signature="3796:3847" placeholder="SELECT id FR..UrlToItem..." />
-            <marker date="1423611996688" expanded="true" signature="4470:4501" placeholder="DELETE FROM ..." />
-            <marker date="1423611996688" expanded="true" signature="5005:5090" placeholder="INSERT INTO ..." />
-            <marker date="1423611996688" expanded="true" signature="5597:5667" placeholder="INSERT INTO ..." />
-            <marker date="1423611996688" expanded="true" signature="6133:6207" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,10 +678,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78368795" vertical-offset="1071" max-vertical-offset="3009">
-          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3009">
+          <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
           <folding>
             <element signature="e#575#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39716312" vertical-offset="3890" max-vertical-offset="4454">
+          <caret line="242" column="40" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
+          <folding>
+            <element signature="e#232#246#0" expanded="true" />
+            <marker date="1423613578885" expanded="true" signature="658:927" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="958:1180" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="1211:1425" placeholder="CREATE TABLE..IF..." />
+            <marker date="1423613578885" expanded="true" signature="2280:2319" placeholder="SELECT id FR..CachedURL..." />
+            <marker date="1423613578885" expanded="true" signature="2862:2913" placeholder="SELECT url, ..CachedURL..." />
+            <marker date="1423613578885" expanded="true" signature="3329:3378" placeholder="SELECT id FR..Item..." />
+            <marker date="1423613578885" expanded="true" signature="3806:3857" placeholder="SELECT id FR..UrlToItem..." />
+            <marker date="1423613578885" expanded="true" signature="4480:4511" placeholder="DELETE FROM ..." />
+            <marker date="1423613578885" expanded="true" signature="5015:5100" placeholder="INSERT INTO ..." />
+            <marker date="1423613578885" expanded="true" signature="5607:5677" placeholder="INSERT INTO ..." />
+            <marker date="1423613578885" expanded="true" signature="6143:6217" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

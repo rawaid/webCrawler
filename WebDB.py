@@ -8,6 +8,7 @@ http://jimi.ithaca.edu/CourseWiki/index.php/CS490_S15_Schedule
 import sqlite3
 import re
 from collections import defaultdict
+import os
 
 
 class WebDB(object):
@@ -214,6 +215,9 @@ class WebDB(object):
 class Wrapper(object):
 
     def createCleanFile(self, dict, id):
+        filename = "cache/clean/"
+        if not os.path.exists(filename):
+            os.makedirs(filename)
         print("CREATE CLEAN")
         filename = self.getFileNameFromID(id)
         fo = open(("cache/clean/" + filename), "w+")
@@ -224,6 +228,9 @@ class Wrapper(object):
         fo.close()
 
     def createRawFile(self, input, id):
+        filename = "cache/raw/"
+        if not os.path.exists(filename):
+            os.makedirs(filename)
         print("CREATE RAW")
         filename = self.getFileNameFromID(id)
         fo = open(("cache/raw/" + filename), "w+")
@@ -232,6 +239,9 @@ class Wrapper(object):
         fo.close()
 
     def createHeaderFile(self, input, id):
+        filename = "cache/header/"
+        if not os.path.exists(filename):
+            os.makedirs(filename)
         filename = self.getFileNameFromID(id)
         fo = open(("cache/header/" + filename), "w+")
 
@@ -239,6 +249,7 @@ class Wrapper(object):
         fo.close()
 
     def getFileNameFromID(self, id):
+
         filename = "" + str(id)
         # while (len(filename) <= 6):
         #     filename = "0" + filename
